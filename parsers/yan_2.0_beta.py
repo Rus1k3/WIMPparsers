@@ -12,12 +12,13 @@ current_dir = os.getcwd()
 ua = UserAgent()
 headers = {'User-Agent': ua.opera}
 
-url = 'https://realty.ya.ru/moskva/kupit/kvartira/bez-posrednikov/?page='
+url = 'https://realty.ya.ru/moskva/snyat/kvartira/bez-posrednikov/?page=1'
 
 r = requests.get(url, headers=headers)
 
 def main():
     read_file()
+    os.remove(current_dir + '\\scrip.json')
 
 
 
