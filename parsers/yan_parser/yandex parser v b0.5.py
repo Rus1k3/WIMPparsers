@@ -6,23 +6,19 @@ import os
 import random
 import sys
 
-
 #прокси сервера
 proxies = {
   'https': 'http://SywsYG:W236W7@45.91.209.157:10234',
 }
-
-
 #путь к каталогу где сохраняется файл scrip.json
 current_dir = os.getcwd()
-
 
 #юсер агент
 ua = UserAgent()
 headers = {'User-Agent': ua.opera}
 
-
 # получение количества страниц
+
 page_rndm = str(random.randint(99, 999))
 
 url = 'https://realty.ya.ru/moskva/snyat/kvartira/bez-posrednikov/?page=' + page_rndm
